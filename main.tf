@@ -1,3 +1,6 @@
+provider "aws" {
+  region = "us-west-2"
+}
 resource "aws_security_group" "elb_sg" {
   vpc_id = var.existing_vpc_id
 
